@@ -8,6 +8,7 @@
     </supportedVersions>
     <loadAfter>
 	    <li>dankpyon.medieval.overhaul</li>
+	    <li>det.epochstallow</li>
     </loadAfter>
   <packageId>Bonfa6059.ISAEpochsPatches</packageId>
 </ModMetaData>
