@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Epochs - Tallow</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[@Name = "DV_Make_Tallow"]/products</xpath>
+					<value>
+						<products>
+							<DankPyon_Tallow>15</DankPyon_Tallow>
+						</products>
+					</value>
+				</li>
+        
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[@Name = "DV_Make_TallowBulk"]/products</xpath>
+					<value>
+						<products>
+							<DankPyon_Tallow>60</DankPyon_Tallow>
+						</products>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name = "DV_TallowTorchBase"]/costList</xpath>
+					<value>
+						<costList>
+							<DankPyon_Tallow>20</DankPyon_Tallow>
+						</costList>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name = "DV_TallowWallLamp"]/costList</xpath>
+					<value>
+						<costList>
+							<DankPyon_Tallow>15</DankPyon_Tallow>
+						</costList>
+					</value>
+				</li>
+
+        <li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name = "DV_TallowHearth"]/comps/fuelFilter/thingDefs</xpath>
+					<value>
+						<thingDefs>
+							<li>DankPyon_Tallow</li>
+						</thingDefs>
+					</value>
+				</li>
+        <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dark Ages : Crypts and Tombs</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name = "DA_CandleBase"]/costList</xpath>
+					<value>
+						<costList>
+							<DankPyon_Tallow>5</DankPyon_Tallow>
+						</costList>
+					</value>
+				</li>
+                
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name = "DA_CandelabraBase"]/costList</xpath>
+					<value>
+						<costList>
+							<DankPyon_Tallow>20</DankPyon_Tallow>
+						</costList>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
