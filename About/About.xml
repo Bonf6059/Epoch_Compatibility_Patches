@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>[ISA] Epoch Compatibility patches</name>
-<description>This mod adds patches for compatibility between MedievaL Overhaul and the Epoch series of mods</description>
+    <name>[ISA] Epochs Compatibility patches</name>
+<description>This mod adds patches for compatibility between MedievaL Overhaul and the Epochs series of mods</description>
     <author>Bonfa6059</author>
     <supportedVersions>
         <li>1.5</li>
@@ -9,5 +9,5 @@
     <loadAfter>
 	    <li>dankpyon.medieval.overhaul</li>
     </loadAfter>
-  <packageId>Bonfa6059.ISAEpochPatches</packageId>
+  <packageId>Bonfa6059.ISAEpochsPatches</packageId>
 </ModMetaData>
