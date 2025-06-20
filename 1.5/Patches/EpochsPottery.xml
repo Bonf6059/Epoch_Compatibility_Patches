@@ -17,4 +17,69 @@
 				</thingDefs>
 			</value>
 	</Operation>
+
+        <Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="Make_ClayBricks"]/fixedIngredientFilter/thingDefs</xpath>
+			<value>
+				<thingDefs>
+					<li>DankPyon_Clay</li>
+				</thingDefs>
+			</value>
+	</Operation>
+
+        <Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="Make_ClayBricks"]/products/thingDefs</xpath>
+			<value>
+				<thingDefs>
+					<DankPyon_Clay>10</DankPyon_Clay>
+				</thingDefs>
+			</value>
+	</Operation>
+
+        <Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="DV_Pots"]/costList</xpath>
+			<value>
+				<costList>
+					<DankPyon_Clay>10</DankPyon_Clay>
+				</costList>
+			</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="DV_BigPot"]/costList</xpath>
+			<value>
+				<costList>
+					<DankPyon_Clay>20</DankPyon_Clay>
+				</costList>
+			</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DV_BasicClayWall"]/costList</xpath>
+			<value>
+				<costList>
+					<DankPyon_Clay>6</DankPyon_Clay>
+				</costList>
+			</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DV_CobbClayWall"]/costList</xpath>
+			<value>
+				<costList>
+					<DankPyon_Clay>8</DankPyon_Clay>
+            				<Hay>4</Hay>
+				</costList>
+			</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DV_CarvedClayWall"]/costList</xpath>
+			<value>
+				<costList>
+					<DankPyon_Clay>8</DankPyon_Clay>
+            				<Hay>4</Hay>
+				</costList>
+			</value>
+	</Operation>
 </Patch>
