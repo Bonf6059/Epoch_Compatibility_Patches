@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Epochs - Pyrinth</li>
+		</mods>
+
+      
+      <RecipeDef ParentName="DankPyon_MineShaftBase">
+		    <defName>ISA_MakePyrinth</defName>
+		    <description>Mine deep down underground to obtain pyrinth</description>
+	    	<workAmount>500</workAmount>
+	    	<label>gather pyrinth</label>
+	    	<jobString>Mining 1 pyrinth</jobString>
+	    	<products>
+	    		<DV_Pyrinth>1</DV_Pyrinth>
+	    	</products>
+	    </RecipeDef>
+
+    	<RecipeDef ParentName="DankPyon_MineShaftBase">
+    		<defName>ISA_MakePyrinthBulk</defName>
+    		<description>Mine deep down underground to obtain pyrinth</description>
+	    	<workAmount>5000</workAmount>
+	    	<label>gather pyrinth x10</label>
+    		<jobString>Mining 10 pyrinth</jobString>
+    		<products>
+    			<DV_Pyrinth>10</DV_Pyrinth>
+    		</products>
+    	</RecipeDef>
+
+
+</Defs>
