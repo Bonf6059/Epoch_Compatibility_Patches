@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
         <Operation Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName="DV_Make_Tallow"]/products</xpath>
-					<value>
-						<products>
-							<DankPyon_Tallow>15</DankPyon_Tallow>
-						</products>
-					</value>
-				</Operation>
-        
+		<xpath>Defs/RecipeDef[defName="Make_Clay"]/products</xpath>
+			<value>
+				<products>
+					<DankPyon_Clay>40</DankPyon_Clay>
+				</products>
+			</value>
+	</Operation>
 
+        <Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="Make_ClayBricks"]/ingredients/li/filter/thingDefs</xpath>
+			<value>
+				<thingDefs>
+					<li>DankPyon_Clay</li>
+				</thingDefs>
+			</value>
+	</Operation>
 </Patch>
