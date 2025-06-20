@@ -8,20 +8,20 @@
 
       
       <RecipeDef ParentName="DankPyon_MineShaftBase">
-		    <defName>ISA_MakePyrinth</defName>
-		    <description>Mine deep down underground to obtain pyrinth</description>
-	    	<workAmount>500</workAmount>
+		<defName>ISA_MakePyrinth</defName>
+		<description>Mine deep down underground to obtain pyrinth</description>
+	    	<workAmount>300</workAmount>
 	    	<label>gather pyrinth</label>
 	    	<jobString>Mining 1 pyrinth</jobString>
 	    	<products>
 	    		<DV_Pyrinth>1</DV_Pyrinth>
 	    	</products>
-	    </RecipeDef>
+	</RecipeDef>
 
     	<RecipeDef ParentName="DankPyon_MineShaftBase">
     		<defName>ISA_MakePyrinthBulk</defName>
     		<description>Mine deep down underground to obtain pyrinth</description>
-	    	<workAmount>5000</workAmount>
+	    	<workAmount>3000</workAmount>
 	    	<label>gather pyrinth x10</label>
     		<jobString>Mining 10 pyrinth</jobString>
     		<products>
