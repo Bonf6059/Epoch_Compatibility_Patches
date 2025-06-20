@@ -1,55 +1,48 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Epochs - Tallow</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName = "DV_Make_Tallow"]/products</xpath>
+<Operation Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="DV_Make_Tallow"]/products</xpath>
 					<value>
 						<products>
 							<DankPyon_Tallow>15</DankPyon_Tallow>
 						</products>
 					</value>
-				</li>
+				</Operation>
         
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName = "DV_Make_TallowBulk"]/products</xpath>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="DV_Make_TallowBulk"]/products</xpath>
 					<value>
 						<products>
 							<DankPyon_Tallow>60</DankPyon_Tallow>
 						</products>
 					</value>
-				</li>
+				</Operation>
 
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "DV_TallowTorchBase"]/costList</xpath>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name = "DV_TallowTorchBase"]/costList</xpath>
 					<value>
 						<costList>
 							<DankPyon_Tallow>20</DankPyon_Tallow>
 						</costList>
 					</value>
-				</li>
+				</Operation>
 
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "DV_TallowWallLamp"]/costList</xpath>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DV_TallowWallLamp"]/costList</xpath>
 					<value>
 						<costList>
 							<DankPyon_Tallow>15</DankPyon_Tallow>
 						</costList>
 					</value>
-				</li>
+				</Operation>
 
-        <li Class="PatchOperationReplace">
+        <Operation Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "DV_TallowHearth"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
 					<value>
 						<li>DankPyon_Tallow</li>
 					</value>
-				</li>
-        <Operation Class="PatchOperationFindMod">
+				</Operation>        
+	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Dark Ages : Crypts and Tombs</li>
 		</mods>
@@ -73,10 +66,6 @@
 						</costList>
 					</value>
 				</li>
-
-			</operations>
-		</match>
-	</Operation>
 
 			</operations>
 		</match>
