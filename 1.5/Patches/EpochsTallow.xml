@@ -8,7 +8,7 @@
 			<operations>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[@Name = "DV_Make_Tallow"]/products</xpath>
+					<xpath>Defs/RecipeDef[defName = "DV_Make_Tallow"]/products</xpath>
 					<value>
 						<products>
 							<DankPyon_Tallow>15</DankPyon_Tallow>
@@ -17,7 +17,7 @@
 				</li>
         
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[@Name = "DV_Make_TallowBulk"]/products</xpath>
+					<xpath>Defs/RecipeDef[defName = "DV_Make_TallowBulk"]/products</xpath>
 					<value>
 						<products>
 							<DankPyon_Tallow>60</DankPyon_Tallow>
@@ -26,7 +26,7 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[@Name = "DV_TallowTorchBase"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName = "DV_TallowTorchBase"]/costList</xpath>
 					<value>
 						<costList>
 							<DankPyon_Tallow>20</DankPyon_Tallow>
@@ -35,7 +35,7 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[@Name = "DV_TallowWallLamp"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName = "DV_TallowWallLamp"]/costList</xpath>
 					<value>
 						<costList>
 							<DankPyon_Tallow>15</DankPyon_Tallow>
@@ -44,11 +44,9 @@
 				</li>
 
         <li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[@Name = "DV_TallowHearth"]/comps/fuelFilter/thingDefs</xpath>
+					<xpath>Defs/ThingDef[defName = "DV_TallowHearth"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
 					<value>
-						<thingDefs>
-							<li>DankPyon_Tallow</li>
-						</thingDefs>
+						<li>DankPyon_Tallow</li>
 					</value>
 				</li>
         <Operation Class="PatchOperationFindMod">
