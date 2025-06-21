@@ -28,16 +28,16 @@
 	</Operation>
 
         <Operation Class="PatchOperationReplace">
-		<xpath>Defs/RecipeDef[defName="Make_ClayBricks"]/products/thingDefs</xpath>
+		<xpath>Defs/RecipeDef[defName="Make_ClayBricks"]/products</xpath>
 			<value>
-				<thingDefs>
-					<DankPyon_Clay>10</DankPyon_Clay>
-				</thingDefs>
+				<products>
+					<DankPyon_BlocksClay>10</DankPyon_BlocksClay>
+				</products>
 			</value>
 	</Operation>
 
-        <Operation Class="PatchOperationReplace">
-		<xpath>Defs/RecipeDef[defName="DV_Pots"]/costList</xpath>
+   	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DV_Pots"]/costList</xpath>
 			<value>
 				<costList>
 					<DankPyon_Clay>10</DankPyon_Clay>
@@ -46,7 +46,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/RecipeDef[defName="DV_BigPot"]/costList</xpath>
+		<xpath>Defs/ThingDef[defName="DV_BigPot"]/costList</xpath>
 			<value>
 				<costList>
 					<DankPyon_Clay>20</DankPyon_Clay>
@@ -82,4 +82,5 @@
 				</costList>
 			</value>
 	</Operation>
+
 </Patch>
