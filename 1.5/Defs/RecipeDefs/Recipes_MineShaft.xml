@@ -30,7 +30,7 @@
 	    	<label>gather clay</label>
 	    	<jobString>Mining 1 clay</jobString>
 	    	<products>
-	    		<DV_Pyrinth>1</DV_Pyrinth>
+	    		<DankPyon_Clay>1</DankPyon_Clay>
 	    	</products>
 	</RecipeDef>
 
@@ -41,7 +41,7 @@
 	    	<label>gather clay x10</label>
     		<jobString>Mining 10 clay</jobString>
     		<products>
-    			<DV_Pyrinth>10</DV_Pyrinth>
+    			<DankPyon_Clay>10</DankPyon_Clay>
     		</products>
     	</RecipeDef>
 
