@@ -23,4 +23,26 @@
     		</products>
     	</RecipeDef>
 
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>ISA_MakeClay</defName>
+		<description>Mine deep down underground to obtain clay</description>
+	    	<workAmount>200</workAmount>
+	    	<label>gather clay</label>
+	    	<jobString>Mining 1 clay</jobString>
+	    	<products>
+	    		<DV_Pyrinth>1</DV_Pyrinth>
+	    	</products>
+	</RecipeDef>
+
+    	<RecipeDef ParentName="DankPyon_MineShaftBase">
+    		<defName>ISA_MakeClayBulk</defName>
+    		<description>Mine deep down underground to obtain clay</description>
+	    	<workAmount>2000</workAmount>
+	    	<label>gather clay x10</label>
+    		<jobString>Mining 10 clay</jobString>
+    		<products>
+    			<DV_Pyrinth>10</DV_Pyrinth>
+    		</products>
+    	</RecipeDef>
+
 </Defs>
